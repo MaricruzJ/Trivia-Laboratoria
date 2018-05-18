@@ -8,6 +8,9 @@ var respuestasIncorrectas= document.getElementById('respuestasIncorrectas');
 var nombreUsuario = prompt("Ingresa tu nombre:");
 saludarUsario.innerHTML = "😊 Bienvenid@ " + nombreUsuario + " 😊" ;
 
+function confirmarjuego(){
+
+
 var iniciarPartida = parseInt(prompt("Ingresa el número que corresponda a tu respuesta \n ¿Quieres iniciar la partida? \n 1.Si \n 2.No"));
 
 // Evaluamos las respuestas del usuario (para iniciar el juego)
@@ -36,4 +39,5 @@ else {//Caso en el que SI quiera continuar con el juego
   } else {
     respuestasIncorrectas.innerHTML += "<br> 2.¿Qué es lo que más le gusta hacer a Lulú? <br> <strong>Respuesta correcta:</strong> 🎤 Cantar 🎤";
   }
+}
 }
